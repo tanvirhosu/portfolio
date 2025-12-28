@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "description": "Tanvir Hossain's portfolio website",
+  "version": "1.0.0",
+  "author": "Tanvir Hossain",
+  "homepage": "https://tanvirhosu.vercel.app",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.11.1",
+    "npm": ">=11.6.2"
+  },
+  "type": "module",
+  "scripts": {
+    "astro": "astro",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "5.16.6"
+  }
+}
