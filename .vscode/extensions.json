@@ -6,7 +6,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "usernamehw.errorlens",
-    "kisstkondoros.vscode-gutter-preview",
+    "kisstkondoros.vscode-gutter-preview"
   ],
   "unwantedRecommendations": []
 }

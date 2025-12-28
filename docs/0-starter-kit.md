@@ -1,18 +1,21 @@
 # Astro Starter Kit
-Astro's official starter template for building a minimal static site with Astro. 
+
+Astro's official starter template for building a minimal static site with Astro.
+
 ```bash
 npm create astro@latest . [-- --template basics]
 ```
 
 The project structure includes a root layout, a home page, and a small set of assets to get started.
+
 - `public/`: non-code, static assets to be served directly via URL without processing by Astro
 - `src/`: project source code
   - `assets/`: processed and optimized assets by Astro to be used in components
   - `components/`: Astro reusable components to be used in pages (with .astro extension)
   - `layouts/`: Astro layout components for consistent site structure (with .astro extension)
-    - *Layout.astro* — main site layout
+    - _Layout.astro_ — main site layout
   - `pages/`: individual pages (with .astro extension)
-    - *index.astro* — home page composition
+    - _index.astro_ — home page composition
 - [`package.json`](../package.json): project manifest
 - [`astro.config.mjs`](../astro.config.mjs): Astro configuration file with ES Modules
 - [`tsconfig.json`](../tsconfig.json): TypeScript configuration file
@@ -20,7 +23,9 @@ The project structure includes a root layout, a home page, and a small set of as
 [Astro docs: project Structure](https://docs.astro.build/en/basics/project-structure/)
 
 ## Why Astro?
+
 Agnostic framework focused on content-first, performance and static-web development.
+
 - Core: **HTML/CSS-first** + JS only when client needs interaction (zero js by default)
   - By default: build static HTML site (SSG)
   - Client-side interactivity with client directives
@@ -36,9 +41,10 @@ Agnostic framework focused on content-first, performance and static-web developm
 - ...
 
 ## Commands
+
 Run the following from the repository root.
 
-``` bash
+```bash
 npm install # install dependencies
 npm run dev # start local dev server (default port used by Astro: 4321)
 npm run build # build static site to ./dist
