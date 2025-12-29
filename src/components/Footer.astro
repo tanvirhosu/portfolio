@@ -1,0 +1,141 @@
+---
+import AstroIcon from '../assets/svg/astro.astro';
+import Github from '../assets/svg/github.astro';
+import LinkedIn from '../assets/svg/linkedIn.astro';
+import Logo from '../assets/svg/logo.astro';
+import Mail from '../assets/svg/mail.astro';
+---
+
+<footer class="root">
+  <div class="wrapper">
+    <Logo />
+    <q>The only way to do great work is to love what you do</q>
+    <div class="contact">
+      <a
+        aria-label="LinkedIn"
+        class="icon"
+        href="https://www.linkedin.com/in/tanvirhosu"
+        target="_blank"
+      >
+        <LinkedIn />
+      </a>
+      <a
+        aria-label="Github"
+        class="icon"
+        href="https://www.github.com/tanvirhosu"
+        target="_blank"
+      >
+        <Github />
+      </a>
+      <a aria-label="Email" class="icon" href="mailto:tanvirhosu@gmail.com">
+        <Mail />
+      </a>
+    </div>
+    <p>
+      Developed by Tanvir Hossain with
+      <a aria-label="Astrojs" href="https://astro.build" target="_blank">
+        <AstroIcon />
+      </a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .root {
+    background: linear-gradient(360deg, #945ffcd0 50%, #7d6ae0d0 80%);
+    position: relative;
+  }
+  .root::before {
+    content: '';
+    background-image: url('../assets/img/top-wave-separator.webp');
+    background-size: 100% 100%;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+  }
+
+  .wrapper {
+    padding: 80px 15px 30px;
+    max-width: var(--lg);
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper > *:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .wrapper > :global(svg) {
+    width: 60px;
+    height: 60px;
+    stroke: var(--co-light);
+  }
+
+  .wrapper > q {
+    max-width: 280px;
+    font: 400 1.5rem/1.5rem var(--ff-tertiary);
+    color: var(--co-light);
+    text-align: center;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .icon {
+    display: block;
+    padding: 8px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid var(--co-light);
+    transition: all 0.2s ease-in-out;
+  }
+  .icon :global(svg) {
+    width: 20px;
+    height: 20px;
+    stroke: var(--co-light);
+  }
+
+  .wrapper > p {
+    font: 400 1.25rem/1.25rem var(--ff-secondary);
+    color: var(--co-light);
+  }
+  .wrapper > p :global(svg) {
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (min-width: 768px) {
+    .root {
+      padding-top: var(--header-ht-dt);
+    }
+    .root::before {
+      height: 150px;
+    }
+
+    .wrapper > * {
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .icon:hover {
+      background: #ffffff;
+    }
+    .icon:hover :global(svg) {
+      stroke: var(--co-secondary);
+    }
+    .wrapper > p :global(svg:hover g) {
+      fill: #000;
+    }
+  }
+</style>

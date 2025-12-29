@@ -1,0 +1,257 @@
+---
+import authorPrimaryImg from '../assets/img/tanvir-primary.webp';
+import authorSecondaryImg from '../assets/img/tanvir-secondary.webp';
+import Github from '../assets/svg/github.astro';
+import LinkedIn from '../assets/svg/linkedIn.astro';
+import Mail from '../assets/svg/mail.astro';
+
+const yearOfExperience = new Date().getFullYear() - 2020;
+---
+
+<section id="intro" class="root">
+  <div class="wrapper">
+    <div class="content">
+      <div class="contact">
+        <a
+          aria-label="LinkedIn"
+          class="icon"
+          href="https://www.linkedin.com/in/tanvirhosu"
+          target="_blank"
+        >
+          <LinkedIn />
+        </a>
+        <a
+          aria-label="Github"
+          class="icon"
+          href="https://www.github.com/tanvirhosu"
+          target="_blank"
+        >
+          <Github />
+        </a>
+        <a aria-label="Email" class="icon" href="mailto:tanvirhosu@gmail.com">
+          <Mail />
+        </a>
+      </div>
+
+      <div class="profile">
+        <img src={authorPrimaryImg.src} alt="Tanvir" />
+        <img src={authorSecondaryImg.src} alt="Tanvir" />
+      </div>
+
+      <div class="detalles">
+        <h2 class="name">Tanvir Hossain</h2>
+        <p class="profession">Full Stack Engineer based in Spain</p>
+        <p class="description">
+          {yearOfExperience}+ years of experience in web development.
+        </p>
+        <p class="description">
+          Specialized as a <strong>JS developer</strong> and <strong
+            >PHP developer</strong
+          >.
+        </p>
+        <p class="description">
+          In love with UX, performance, clean code-architecture and security.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .root {
+    padding-top: var(--header-ht);
+    background: #ecf5ff url(../assets/img/main-bkg.webp) no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+  }
+  .root::before {
+    content: ' ';
+    width: 100%;
+    height: 14%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-image: url(../assets/img/bottom-custom-separator.webp);
+    background-size: cover;
+  }
+  .wrapper {
+    padding: 20px 15px;
+    max-width: var(--lg);
+    margin-inline: auto;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* CONTACT */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .icon svg {
+    stroke: var(--co-primary);
+  }
+
+  /* PROFILE */
+  .profile {
+    max-width: 240px;
+    width: 100%;
+    height: 300px;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .profile img {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: carousel-animation 10s infinite;
+  }
+  .profile img:nth-child(2) {
+    animation-delay: 5s;
+  }
+
+  /* DETALLES */
+  .detalles {
+    grid-column: 1/3;
+  }
+  .detalles > p {
+    padding-inline: 6px;
+  }
+
+  .name {
+    font: 900 2.2rem var(--ff-primary);
+    background-image: var(--gradient-secondary);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: color-change-animation 3s ease infinite alternate;
+  }
+
+  .profession {
+    margin: 5px 0 15px;
+    font: 900 1.5rem/1.5rem var(--ff-secondary);
+    color: var(--co-description);
+  }
+
+  .description {
+    font: 400 1.2rem/1.2rem var(--ff-secondary);
+    color: var(--co-description-soft);
+  }
+
+  .description + .description {
+    margin-top: 10px;
+  }
+
+  @media (min-width: 568px) {
+    .wrapper {
+      padding: 20px 20%;
+    }
+    .content {
+      grid-template-columns: 1fr 3fr;
+    }
+    .detalles {
+      margin: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .root {
+      padding-top: var(--header-ht-dt);
+    }
+    .root::before {
+      background-image: url(../assets/img/bottom-separator.webp);
+      height: auto;
+      aspect-ratio: 16/3;
+    }
+
+    .wrapper {
+      padding-block: calc(2 * var(--header-ht-dt));
+      padding-inline: 15px;
+    }
+
+    .content {
+      grid-template-columns: max-content 1.5fr 1fr;
+    }
+
+    /* PROFILE */
+    .profile {
+      max-width: 340px;
+      width: 100%;
+      height: 400px;
+      order: 1;
+      margin-left: auto;
+    }
+
+    /* DETALLES */
+    .detalles {
+      grid-column: initial;
+      margin: auto auto auto var(--header-ht-dt);
+    }
+
+    .name {
+      font-size: 2.5rem;
+    }
+
+    .profession {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    /* CONTACT */
+    .icon svg:hover {
+      stroke: var(--co-secondary);
+    }
+  }
+
+  @keyframes color-change-animation {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  @keyframes carousel-animation {
+    0% {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+    5% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    60% {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+  }
+</style>

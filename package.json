@@ -19,7 +19,12 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "5.16.6"
+    "@astrojs/react": "4.4.2",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "astro": "5.16.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "8.50.1",

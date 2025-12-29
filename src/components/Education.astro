@@ -1,0 +1,53 @@
+---
+import data from '../data/education.json';
+import type { Education } from '../types/types';
+import TabsWithContent from './TabsWithContent';
+
+const education = data as Education[];
+---
+
+<section id="education" class="root">
+  <div class="wrapper">
+    <h3 class="title"># Education and awards</h3>
+    <TabsWithContent data={education} style="isSecondary" client:visible />
+  </div>
+</section>
+
+<style>
+  .root {
+    padding: calc(var(--header-ht)) 15px 20px;
+    background: linear-gradient(180deg, #f8f9fd 100%, #7d6ae0 100%);
+  }
+
+  .wrapper {
+    max-width: var(--lg);
+    margin-inline: auto;
+  }
+  .wrapper > * {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font: 900 1.8rem/1.8rem var(--ff-primary);
+    background-image: var(--gradient-title);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (min-width: 568px) {
+    .root::after {
+      padding-block: 30px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .root {
+      padding-top: var(--header-ht-dt);
+    }
+
+    .wrapper > * {
+      margin-bottom: 30px;
+    }
+  }
+</style>

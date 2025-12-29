@@ -1,8 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import AboutMe from '../components/AboutMe.astro';
+import Education from '../components/Education.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects/index.astro';
+import Skills from '../components/Skills.astro';
+import AppLayout from '../layouts/AppLayout.astro';
 ---
 
-<Layout>
-  <Welcome />
-</Layout>
+<AppLayout
+  title="Tanvir Hossain | Software Engineer"
+  description="Professional site of Tanvir Hossain"
+>
+  <AboutMe />
+  <Experience />
+  <Education />
+  <Projects />
+  <Skills />
+</AppLayout>

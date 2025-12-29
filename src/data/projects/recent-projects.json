@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "active": true,
+    "name": "Fibness",
+    "link": "https://github.com/tanvirhosu/Android-app-frontend_Fibness-Java",
+    "img": "fibness-logo.webp",
+    "content": {
+      "title": "Fibness: run free, feel free",
+      "subtitle": "",
+      "info": "Android mobile app",
+      "video": "https://www.youtube.com/embed/wLnTIjrKYKE",
+      "summary": [
+        "Focused on the organization of people's daily sports habits: encourage practice of sport.",
+        "It concentrates on the improvement of health: physical condition and social communication."
+      ],
+      "details": [
+        "Scrum methodology",
+        "Design: product box, logos, icons, mockups",
+        "Use of external services: maps, virtual machine, etc"
+      ],
+      "features": ["Android", "Java", "Express", "PostgreSQL"]
+    }
+  },
+  {
+    "id": 2,
+    "active": true,
+    "name": "Post It",
+    "link": "https://post-your-ideas.netlify.app",
+    "img": "post-it-logo.svg",
+    "content": {
+      "title": "Post It",
+      "subtitle": "",
+      "info": "Web app",
+      "imgs": [
+        "post-it/1.webp",
+        "post-it/2.webp",
+        "post-it/3.webp",
+        "post-it/4.webp"
+      ],
+      "summary": [
+        "Write down your ideas and publish them with a post-it to share your knowledge."
+      ],
+      "details": ["Themes", "Internalization", "Document editor"],
+      "features": [
+        "React",
+        "Scss",
+        "MUI",
+        "Context API",
+        "Netlify",
+        "Express",
+        "MongoDB",
+        "Vercel"
+      ]
+    }
+  }
+]

@@ -1,0 +1,327 @@
+.root {
+  position: relative;
+}
+.root::before {
+  content: "";
+  background-image: url(../../assets/svg/top-wave-separator.svg);
+  background-size: cover;
+  background-color: #f8f9fd;
+  display: block;
+  height: var(--header-ht);
+}
+.root::after {
+  content: "";
+  position: absolute;
+  top: var(--header-ht);
+  left: 0;
+  width: 100%;
+  height: calc(100% - var(--header-ht));
+  background-image: linear-gradient(180deg, var(--co-primary-soft), #f6f7fb);
+  z-index: -2;
+}
+
+.wrapper {
+  padding: 0 15px 20px;
+  max-width: var(--lg);
+  margin-inline: auto;
+}
+.wrapper > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.title {
+  font: 900 1.8rem/2.2rem var(--ff-primary);
+  color: var(--co-light);
+}
+
+/* TOP PROJECTS */
+.topProjects > li + li {
+  margin-top: 25px;
+}
+
+.topProject {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 1;
+}
+.topProject::before,
+.topProject::after {
+  content: "";
+  background-image: url("../../assets/svg/doodle-corner.svg");
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: -1; /* to avoid overlapping */
+}
+.topProject::before {
+  top: 0;
+  left: 0;
+}
+.topProject::after {
+  bottom: 0;
+  right: 0;
+  transform: rotateX(180deg) rotateY(180deg);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-inline: auto;
+}
+.details .title {
+  margin: 20px auto 0;
+  font: 400 1.25rem/1.375rem var(--ff-primary);
+  color: var(--co-description);
+}
+.details .title svg {
+  vertical-align: bottom;
+  margin-left: 4px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  stroke: var(--co-description);
+}
+.summary {
+  font: 400 1.25rem/1.25rem var(--ff-secondary);
+  color: var(--co-description-soft);
+}
+.detail {
+  font: 400 1.2rem/1.2rem var(--ff-secondary);
+  color: var(--co-description-soft);
+}
+.detail::before {
+  padding: 2px 5px 0 0;
+  content: "▹";
+  font-size: 15px;
+  color: var(--co-secondary);
+}
+.summary + .summary,
+.detail + .detail {
+  margin-top: 5px;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.feature {
+  padding: 5px 10px;
+  font: 400 1rem/1rem var(--ff-secondary);
+  color: var(--co-dark);
+  background-color: #031b4e11;
+  border-radius: 4px;
+}
+.summary:first-child,
+.detail:first-child,
+.features {
+  margin-top: 15px;
+}
+
+.resume {
+  margin-top: 16px;
+}
+.imgs {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 16px;
+}
+.img {
+  width: 335px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.iframe iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px !important;
+}
+
+/* FEATURED PROJECTS */
+.featuredProjects {
+  padding-inline: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+.featuredProjects > h4 {
+  font: 600 1.5rem/1.5rem var(--ff-primary);
+  color: var(--co-dark);
+
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.1em;
+  text-decoration-color: var(--co-dark);
+}
+.featuredProjects > ul {
+  display: grid;
+  gap: 16px;
+}
+.featuredProject {
+  max-width: 335px;
+  height: 100%;
+  padding: 25px;
+  border-radius: 25px;
+
+  background-image: linear-gradient(45deg, #ffffffa0 60%, #d9dbff11 60%);
+  box-shadow: 6px 6px 10px #8c93bd, 0 0 10px 10px inset #5a88ff1f;
+  border: 2px outset #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  position: relative;
+}
+.fpHeadline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fpHeadline > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.fpHeadline > a {
+  z-index: 1;
+}
+.fpTitle {
+  margin-top: 10px;
+  font: 600 1.25rem/1.375rem var(--ff-primary);
+  color: var(--co-description);
+}
+.fpTitle::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+.fpDescription {
+  font: 400 1.25rem/1.375rem var(--ff-secondary);
+  color: var(--co-description-soft);
+}
+
+@media (min-width: 768px) {
+  .root::before {
+    height: var(--header-ht-dt);
+  }
+  .root::after {
+    top: var(--header-ht-dt);
+    height: calc(100% - var(--header-ht) - 10px);
+  }
+
+  .wrapper > *:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  /* TOP PROJECTS */
+  .topProject {
+    padding: 30px 50px;
+    flex-direction: row;
+  }
+  .topProject.toogle {
+    flex-direction: row-reverse;
+  }
+  .topProject::before,
+  .topProject::after {
+    width: 200px;
+    height: 200px;
+  }
+
+  .details {
+    width: 40%;
+  }
+  .toogle .details {
+    margin-left: 40px;
+    width: 60%;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+  .details .title {
+    margin-inline: 0;
+  }
+  .details .title svg {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s;
+  }
+
+  .resume {
+    margin-left: 40px;
+    margin-block: auto;
+    width: 60%;
+  }
+  .toogle .resume {
+    margin-left: 0px;
+    width: 40%;
+  }
+  .imgs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* FEATURED PROJECTS */
+  .featuredProjects {
+    padding-inline: 50px;
+    row-gap: 30px;
+  }
+  .featuredProjects > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .featuredProject {
+    justify-content: flex-start;
+  }
+  .featuredProject .features {
+    margin-top: auto;
+  }
+}
+
+/* lg + some padding = to avoid that there is no sudden jump */
+@media (min-width: 1032px) {
+  .wrapper {
+    padding-inline: 0;
+  }
+
+  /* TOP PROJECTS */
+  .details .title:hover {
+    color: var(--co-secondary);
+  }
+  .details .title:hover svg {
+    stroke: var(--co-secondary);
+    transform: translate(2px, -2px) scale(1);
+  }
+
+  /* FEATURED PROJECTS */
+  .featuredProject:hover {
+    box-shadow: 0 8px 20px var(--co-secondary-softer),
+      0 0 10px 10px inset var(--co-secondary-smooth);
+  }
+  .fpHeadline > a:hover svg {
+    stroke: var(--co-primary-hard);
+  }
+}

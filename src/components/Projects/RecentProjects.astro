@@ -1,0 +1,78 @@
+---
+import ArrowIcon from '../../assets/svg/ArrowIcon.astro';
+import data from '../../data/projects/recent-projects.json';
+import type { RecentProject } from '../../types/types';
+import styles from './styles.module.css';
+
+const projects = (data as RecentProject[])
+  .filter((e) => e.active)
+  .sort((a, b) => b.id - a.id);
+---
+
+<ul class={styles.topProjects}>
+  {
+    projects.map(
+      (
+        {
+          img,
+          link,
+          content: { title, summary, details, features, video, imgs },
+        },
+        i
+      ) => (
+        <li>
+          <article
+            class={`${styles.topProject} ${i % 2 == 1 ? styles.toogle : ''}`}
+          >
+            <div class={styles.details}>
+              <img class={styles.logo} src={img} alt="Logo" />
+              <a
+                aria-label="Project name"
+                class={styles.title}
+                href={link}
+                target="_blank"
+              >
+                {title}
+                <ArrowIcon />
+              </a>
+              <ul>
+                {summary.map((text) => (
+                  <li class={styles.summary}>{text}</li>
+                ))}
+              </ul>
+              <ul>
+                {details.map((text) => (
+                  <li class={styles.detail}>{text}</li>
+                ))}
+              </ul>
+              <ul class={styles.features}>
+                {features.map((text) => (
+                  <li class={styles.feature}>{text}</li>
+                ))}
+              </ul>
+            </div>
+            <div class={styles.resume}>
+              {video ? (
+                <div class={styles.iframe}>
+                  <iframe
+                    title="Demo"
+                    src={video}
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  />
+                </div>
+              ) : imgs ? (
+                <div class={styles.imgs}>
+                  <img class={styles.img} src={imgs[0]} alt="Demo" />
+                  <img class={styles.img} src={imgs[1]} alt="Demo" />
+                  <img class={styles.img} src={imgs[2]} alt="Demo" />
+                  <img class={styles.img} src={imgs[3]} alt="Demo" />
+                </div>
+              ) : null}
+            </div>
+          </article>
+        </li>
+      )
+    )
+  }
+</ul>

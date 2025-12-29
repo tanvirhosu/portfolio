@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "active": true,
+    "logo": "qomp.svg",
+    "demo": "https://youtu.be/HdCgAaP3l9U",
+    "link": "https://github.com/tanvirhosu/3D-Videogame_QOMP-Unity",
+    "title": "QOMP",
+    "description": "3D video game that generalizes the classic game Pong adding new features.",
+    "info": "Game app",
+    "features": ["C#", "Unity engine"]
+  },
+  {
+    "id": 2,
+    "active": true,
+    "logo": "break-in.svg",
+    "demo": "https://www.youtube.com/watch?v=mhvcNAW4Gdc",
+    "link": "https://github.com/tanvirhosu/2D-Videogame_BreakIn-OpenGL",
+    "title": "Break In",
+    "description": "2D video game in tile-based engine.",
+    "info": "Gaming app",
+    "features": ["C++", "OpenGL API"]
+  },
+  {
+    "id": 3,
+    "active": true,
+    "logo": "robotic-surgery.svg",
+    "link": "https://github.com/tanvirhosu/Robotics_ManipulatorRobot-matlab",
+    "title": "Robotman",
+    "description": "Robot simulation with manipulator robot to perform a brain surgery.",
+    "info": "Robotics app",
+    "features": ["Matlab"]
+  },
+  {
+    "id": 4,
+    "active": true,
+    "logo": "football-team-detection.svg",
+    "link": "https://github.com/tanvirhosu/FootballTeamDetection_CompterVision-matlab",
+    "title": "Football team detection",
+    "description": "Implementation of an algorithm for the recognition of football teams in images.",
+    "info": "CV",
+    "features": ["Matlab"]
+  },
+  {
+    "id": 5,
+    "active": true,
+    "logo": "electronic-store.svg",
+    "link": "https://github.com/tanvirhosu/DistributedIntelligentSystems_E-shop-Python",
+    "title": "E-shop",
+    "description": "Simulation of an intelligent distributed application that manages the purchase and sale of an electronic store.",
+    "info": "Distributed application, Agent-oriented programming, Semantic Web",
+    "features": ["Flask"]
+  },
+  {
+    "id": 6,
+    "active": true,
+    "logo": "treekea.svg",
+    "link": "https://github.com/tanvirhosu/OOP_TreeKEA-Cplusplus",
+    "title": "TreeKEA",
+    "description": "Implementation of logics to distribute products from a store.",
+    "info": "OOP, Tree",
+    "features": ["C++"]
+  },
+  {
+    "id": 7,
+    "active": true,
+    "logo": "compressor-logo.webp",
+    "link": "https://github.com/tanvirhosu/3-tierArchitecture_CompressorApp-Java",
+    "title": "Compressor",
+    "description": "Desktop application based on compressing and decompressing files where the following algorithms were applied: LZ78, LZW, LZSS and JPEG.",
+    "info": "Desktop app, Three-tier architecture",
+    "features": ["Java"]
+  },
+  {
+    "id": 8,
+    "active": true,
+    "logo": "hn-logo.svg",
+    "link": "https://github.com/tanvirhosu/Frontend-API_Hackernews-Vuejs",
+    "title": "Hacker News",
+    "description": "Implementation of use cases of the HN system: login, contribution with comments and replies, voting, etc.",
+    "info": "Server-side app, Client-side app, Swagger",
+    "features": ["Vue", "REST", "Django", "Heroku"]
+  }
+]

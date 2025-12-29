@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "active": false,
+    "name": "Sports coach",
+    "link": "sports-coach-certificate.webp",
+    "img": "ccesport.webp",
+    "content": {
+      "title": "Game and sport at school age",
+      "subtitle": "Mar 2016 - Apr 2016",
+      "info": "Barcelona, Spain",
+      "summary": ["Preparation to lead school sports activities."],
+      "details": [
+        "Study of children's behaviors",
+        "Study of different types of school activities"
+      ],
+      "features": ["Teamwork", "Coaching", "Empathy"]
+    }
+  },
+  {
+    "id": 2,
+    "active": true,
+    "name": "IT Service",
+    "link": "it-certificate.webp",
+    "img": "cisco-networking-academy.webp",
+    "content": {
+      "title": "Cisco Certified: IT Essential",
+      "subtitle": "Jun 2014 - Oct 2014",
+      "info": "Barcelona, Spain",
+      "summary": [
+        "Maintenance, optimization and implementation of IT equipment."
+      ],
+      "details": [
+        "Assembling desktop computer",
+        "Network configuration",
+        "Preventative maintenance and troubleshooting tasks"
+      ],
+      "features": ["Switches", "Routers", "OS", "Networks"]
+    }
+  },
+  {
+    "id": 3,
+    "active": true,
+    "name": "Youth research program",
+    "link": "award-research-work.webp",
+    "img": "CEB.webp",
+    "content": {
+      "title": "Project for a neighborhood market",
+      "subtitle": "Abr 2017",
+      "info": "Barcelona, Spain",
+      "extraInfo": "Thanks to my tutor Gloria Martin",
+      "summary": [
+        "Presentation of an alternative proposal to remodel a neighborhood market. The ultimate goal was to convert the traditional market into a multifunctional space taking into account people's needs."
+      ],
+      "details": [
+        "Talks with architects",
+        "Interviews with the people of the neighborhood",
+        "Design implementation"
+      ],
+      "features": ["Research", "Self-learning"]
+    }
+  },
+  {
+    "id": 4,
+    "active": true,
+    "name": "Technological modality",
+    "link": "https://agora.xtec.cat/ies-miquel-tarradell",
+    "img": "ies-miquel-tarradell.webp",
+    "content": {
+      "title": "European Baccalaureate",
+      "subtitle": "Sep 2015 - Jun 2017",
+      "info": "Barcelona, Spain",
+      "extraInfo": "Average grade: 9/10",
+      "summary": [
+        "Acquired general knowledge in the field of science and technology."
+      ],
+      "details": ["High Honors Qualification"],
+      "features": [
+        "Linguistic communication",
+        "Use of technology",
+        "Reasoning",
+        "Self-learning"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "active": true,
+    "name": "Software engineering",
+    "link": "https://www.fib.upc.edu/en",
+    "img": "fib-upc.webp",
+    "content": {
+      "title": "Bachelor degree of Computer Science",
+      "subtitle": "Sep 2017 - Jan 2022",
+      "info": "Barcelona, Spain",
+      "extraInfo": "Average grade: 7.14/10",
+      "summary": [
+        "Acquired knowledge, skills and competencies in the field of computer engineering.",
+        "Specialized in software engineering."
+      ],
+      "details": [
+        "Advanced programming, algorithms and architectures",
+        "Logic, fundamentals and engineering project",
+        "Web applications and services",
+        "Mobile development",
+        "Video games development",
+        "Computer vision",
+        "Robotics",
+        "Cryptography and computer security",
+        "Business and economic environment"
+      ],
+      "features": [
+        "Logic reasoning",
+        "Problem solving",
+        "Communication",
+        "Teamwork",
+        "Self-learning",
+        "Third language"
+      ]
+    }
+  }
+]

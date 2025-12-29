@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "active": false,
+    "name": "Asociación Deportiva",
+    "link": "https://www.aeciutatvella.cat",
+    "img": "aeciutatvella-logo.webp",
+    "content": {
+      "title": "Football sports coach",
+      "subtitle": "Jun 2016 - Sep 2016",
+      "info": "Barcelona, Spain",
+      "summary": [
+        "Organization and implementation of sports activities for students from 12 to 15 years old."
+      ],
+      "details": ["Individual and group follow-up"],
+      "features": ["Coaching", "Team building"]
+    }
+  },
+  {
+    "id": 2,
+    "active": true,
+    "name": "Trinijove foundation",
+    "link": "https://trinijove.org",
+    "img": "trinijove-logo.webp",
+    "content": {
+      "title": "Junior Developer",
+      "subtitle": "Jun 2017 - Sep 2017",
+      "info": "Barcelona, Spain",
+      "summary": [
+        "Maintenance and improvement of the foundation's website and mobile application."
+      ],
+      "details": [
+        "Implemented some static parts of the foundation's website.",
+        "Developed some fragments of the android mobile application."
+      ],
+      "features": ["HTML", "CSS", "JS", "Android Studio"]
+    }
+  },
+  {
+    "id": 3,
+    "active": true,
+    "name": "Raona",
+    "link": "https://www.raona.com",
+    "img": "raona-logo.svg",
+    "content": {
+      "title": "Sharepoint Developer",
+      "subtitle": "Jan 2021 - Jan 2022",
+      "info": "Sant Joan Despí, Barcelona, Spain",
+      "summary": ["Web applications based on Microsoft 365 technologies."],
+      "details": [
+        "Developed intranet with SharePoint Online",
+        "Installed existing solutions or modules to client platforms",
+        "Programmed automated workflows",
+        "Participated in meetings with clients to determine system requirements",
+        "Built services to manipulate O365 analytics data",
+        "Utilized Azure operations and ecosystem services: azure function, API, storage, etc.",
+        "Worked in a team with SCRUM methodology"
+      ],
+      "features": [
+        "SharePoint",
+        "React [TS]",
+        "Power Automate",
+        ".NET [C#]",
+        "3 layer architecture",
+        "Microsoft SQL Server",
+        "Microsoft Azure"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "active": true,
+    "name": "Prometeus",
+    "link": "https://www.aeiraval.org",
+    "img": "prometeus-logo.webp",
+    "content": {
+      "title": "Volunteering",
+      "subtitle": "Jan 2022 - Present",
+      "info": "Barcelona, Spain",
+      "summary": [
+        "Collaboration with the neighborhood association to help high school and university students in subjects related to computer engineering."
+      ],
+      "details": [
+        "Attend scheduled meetings",
+        "Solve doubts about programming"
+      ],
+      "features": ["Communication", "Empathy"]
+    }
+  },
+  {
+    "id": 5,
+    "active": true,
+    "name": "Interficie",
+    "link": "https://www.interficie.com",
+    "img": "interficie-logo.webp",
+    "content": {
+      "title": "Full Stack Developer",
+      "subtitle": "Feb 2022 - Feb 2024",
+      "info": "Remote",
+      "summary": ["ERP, CMS and Funnel systems development"],
+      "details": [
+        "Implemented ERP solutions to manage grants for local or international projects, processes of student scholarships, workshop management, entities, users, etc.",
+        "Developed user interfaces and functionalities to manage the CMS platform with the aim of selling and renewing products: park tickets + hotels",
+        "Integrated the payment system with Klarna",
+        "Incorporated Docker services",
+        "Monitored product purchase logs in AWS",
+        "Participated in the improvement of the system: redesign, architecture, patterns, testing, external services, etc.",
+        "Worked in squad team with SCRUM methodology"
+      ],
+      "features": [
+        "React [TS]",
+        "Next [TS]",
+        "Sass",
+        "Material UI",
+        "Context API",
+        "Redux Toolkit - Saga",
+        "Jest",
+        "Cypress",
+        "Laravel [PHP]",
+        "Symfony [PHP]",
+        "PHPUnit",
+        "Nest [TS]",
+        "DDD design with hexagonal architecture",
+        "MySQL",
+        "Snowflake",
+        "Docker",
+        "AWS"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "active": true,
+    "name": "ESTOKO Logistics ",
+    "link": "https://estoko.com",
+    "img": "estoko-logo.webp",
+    "content": {
+      "title": "Full Stack Developer",
+      "subtitle": "Mar 2024 - Present",
+      "info": "Zona Franca, Barcelona, Spain",
+      "summary": ["Warehouse management platform"],
+      "details": [
+        "Maintained internal app development for lead capture.",
+        "Implemented logistics platform to manage warehouse operations, clients, articles, etc.",
+        "Build SaaS product functionalities to contract logistics services on demand.",
+        "Integrated 3rd-party marketing tools to enhance warehouse utilization and revenue growth.",
+        "Worked with cross-functional teams in an agile environment to deliver features on time.",
+        "... and more"
+      ],
+      "features": [
+        "React [TS]",
+        "Next [TS]",
+        "CSS Modules",
+        "Chakra UI",
+        "Context API",
+        "Redux Toolkit - Saga",
+        "RTK Query",
+        "Apollo Client",
+        "Jest",
+        "Cypress",
+        "GraphQL",
+        "Rest API",
+        "Express [TS]",
+        "Nest [TS]",
+        "Prisma",
+        "Knex",
+        ".NET [C#]",
+        "Postgres",
+        "Docker",
+        "Jenkins",
+        "AWS",
+        "Google Cloud"
+      ]
+    }
+  }
+]
