@@ -3,7 +3,7 @@
   "description": "Tanvir Hossain's portfolio website",
   "version": "1.0.0",
   "author": "Tanvir Hossain",
-  "homepage": "https://tanvirhosu.vercel.app",
+  "homepage": "https://tanvirhosu.netlify.app",
   "license": "MIT",
   "engines": {
     "node": ">=24.11.1",

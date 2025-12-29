@@ -3,7 +3,7 @@
 - JS/TS
 - Pure CSS + CSS Modules
 - React: 19.2.3
-- Cloud provider: Vercel
+- Cloud provider: Netlify
 
 ## User stories
 > `As a` public user of a system, `I want to` view the portfolio `so that` to know the protagonist.

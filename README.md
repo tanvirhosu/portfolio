@@ -10,7 +10,7 @@
   <p align="center">
     A portafolio that represents a professional career of author.
     <br />
-    <a href="https://tanvirhosu.vercel.app" target="_blank"><strong>Explore »</strong></a>
+    <a href="https://tanvirhosu.netlify.app" target="_blank"><strong>Explore »</strong></a>
     <br />
     <p>
       <a href="https://www.linkedin.com/in/tanvirhosu">
@@ -91,10 +91,7 @@ To run this project locally, follow these steps:
   ```bash
   npm run preview
   ```
-- Deploy to static host service (e.g., Vercel)
-  ```bash
-  npm run deploy
-  ```
+- Deploy to static host service (e.g., Netlify): no setup required, will be deployed automatically from GitHub repo. 
 
 <p align="right">(<a href="#readme-top">Go to top</a>)</p>
 
