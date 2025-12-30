@@ -93,6 +93,8 @@ To run this project locally, follow these steps:
   ```
 - Deploy to static host service (e.g., Netlify): no setup required, will be deployed automatically from GitHub repo. 
 
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/483ccf98-fe26-4767-ac35-a06bf3e745f8/deploy-status)](https://app.netlify.com/projects/tanvirhosu/deploys)
+
 <p align="right">(<a href="#readme-top">Go to top</a>)</p>
 
 ## 📝 License
